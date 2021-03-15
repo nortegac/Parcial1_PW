@@ -1,0 +1,686 @@
+body {
+  background: #e5e5e5;
+}
+
+nav {
+  width: 1440px;
+  height: 80px;
+
+  background: linear-gradient(
+    270deg,
+    #745ece 0%,
+    rgba(105, 72, 237, 0.41) 47.4%,
+    #5e63c8 82.29%
+  );
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+input {
+  position: absolute;
+  width: 792px;
+  height: 30px;
+  margin-top: 9px;
+  margin-bottom: 8px;
+  padding: 0px;
+  border: #ffffff;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #d5c9c9;
+}
+
+::placeholder {
+  color: #d5c9c9;
+}
+
+#logo {
+  position: absolute;
+  width: 100px;
+  height: 60px;
+  left: 100px;
+  top: 10px;
+
+  /* background: url(logo_test.png); */
+  mix-blend-mode: normal;
+  border-radius: 2px;
+}
+
+#barraBusq {
+  position: absolute;
+  width: 892px;
+  height: 47px;
+  left: 448px;
+  top: 20px;
+  padding-left: 9px;
+
+  background: #ffffff;
+}
+
+#barraTxt {
+  position: absolute;
+  width: 792px;
+  height: 30px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #d5c9c9;
+}
+
+#lupaBox {
+  position: absolute;
+  width: 56px;
+  height: 47px;
+  left: 1284px;
+  top: 20px;
+
+  background: #e5e5e5;
+  border: 1px solid #c6c2c2;
+  box-sizing: border-box;
+}
+
+#lupa {
+  position: absolute;
+  left: 17.86%;
+  right: 17.86%;
+  top: 10.64%;
+  bottom: 12.77%;
+}
+
+#favs {
+  position: absolute;
+  width: 44px;
+  height: 40px;
+  left: 1375px;
+  top: 20px;
+}
+
+#cellCards {
+  position: absolute;
+  min-width: 1240px;
+  width: auto;
+  /* height: 221px; */
+  left: 100px;
+  top: 159px;
+  padding: 0px;
+
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+
+.tarjetaCel {
+  position: relative;
+  min-width: 1240px;
+  width: auto;
+  height: 221px;
+  padding: 0px;
+  margin: 0px;
+
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.cellPhoto {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+
+  left: 44px;
+  top: 30px;
+  bottom: 11px;
+  right: 1016px;
+
+  border-color: aqua;
+  border-radius: 15px;
+}
+
+.priceTag {
+  position: absolute;
+  width: 150px;
+  height: 35px;
+  margin: 0px;
+
+  top: 30px;
+  left: 348px;
+  /* right: 742px;
+  bottom: 156px; */
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #000000;
+}
+
+.nombreCel {
+  position: absolute;
+  width: 500px;
+  height: 35px;
+
+  top: 112px;
+  left: 348px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #000000;
+}
+
+.freeShipping {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 498px;
+  top: 34px;
+}
+
+.cityTag {
+  position: absolute;
+  width: 150px;
+  height: 35px;
+  left: 1011px;
+  top: 30px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #000000;
+}
+
+.breadcrumb {
+  /* position: relative; */
+  min-width: 520px;
+  width: auto;
+  height: 32px;
+  /* left: 99px;
+  top: 114px; */
+  margin-left: 99px;
+  margin-top: 31px;
+  margin-bottom: 0px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: justify;
+
+  color: rgba(0, 0, 0, 0.67);
+}
+
+#detailFrame {
+  /* position: absolute; */
+  /* display: inline-flex; */
+  width: 1240px;
+  height: auto;
+  min-height: 852px;
+  /* left: 100px;
+  top: 158px; */
+  margin-left: 99px;
+  margin-top: 12px;
+
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+
+#main {
+  width: 100%;
+  height: auto;
+  margin-bottom: 14px;
+  /* border: 5px solid black; */
+}
+
+#detPhoto {
+  position: absolute;
+
+  width: 563px;
+  height: 520px;
+  top: 212px;
+  left: 150px;
+
+  /* border: 3px solid black; */
+}
+
+#status {
+  position: absolute;
+  width: 312px;
+  height: 35px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+
+  top: 212px;
+  left: 978px;
+  /* border: 5px solid black; */
+}
+
+#nombreDet {
+  /* position: absolute; */
+  width: 312px;
+  height: auto;
+  /* left: 978px; */
+  /* top: 278px; */
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #000000;
+}
+
+#priceDet {
+  /* position: absolute; */
+  margin-top: 26px;
+  width: 312px;
+  height: auto;
+  /* left: 978px; */
+  /* top: 335px; */
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #000000;
+}
+
+#butRosa {
+  /* position: absolute; */
+  margin-top: 48px;
+  width: 312px;
+  height: 51px;
+  padding-top: 7px;
+  /* padding-left: 35px; */
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #ffffff;
+  /* left: 978px; */
+  /* top: 416px; */
+
+  background: #c968cb;
+  border-radius: 20px;
+}
+
+#butMorado {
+  /* position: absolute; */
+  margin-top: 18px;
+  width: 312px;
+  height: 51px;
+  padding-top: 10px;
+  /* left: 978px; */
+  /* top: 485px; */
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #ffffff;
+
+  background: #8c86d7;
+  border-radius: 20px;
+}
+
+#txtMorado {
+  position: absolute;
+  width: 236px;
+  height: 31px;
+  left: 1013px;
+  top: 495px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+#descTitle {
+  position: absolute;
+  width: 312px;
+  height: 31px;
+  left: 150px;
+  top: 755px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 34px;
+
+  color: #000000;
+}
+
+#description {
+  /* position: absolute; */
+  width: 828px;
+  min-height: 170px;
+  height: auto;
+  margin-left: 50px;
+  margin-top: 651px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: justify;
+
+  color: #b8acac;
+}
+
+#panel {
+  position: absolute;
+  width: 312px;
+  height: auto;
+  left: 978px;
+  top: 278px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  position: absolute;
+  top: 359px;
+  left: 486px;
+  width: 578px;
+  min-height: 364px;
+  height: auto;
+
+  background: #ffffff;
+  border: 1px solid #c6c2c2;
+  box-sizing: border-box;
+}
+
+#modalText {
+  /* position: absolute; */
+  width: 312px;
+  min-height: 51px;
+  height: auto;
+  margin-left: 140px;
+  margin-top: 114px;
+}
+
+#modalName2 {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+
+  color: #000000;
+}
+
+#modalName {
+  width: 312px;
+  height: 51px;
+  /* left: 140px; */
+  margin-top: 31px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+
+  color: #000000;
+}
+
+#hr {
+  /* position: absolute; */
+  /* width: 556px; */
+  height: 0px;
+  margin-right: 11px;
+  margin-left: 11px;
+  margin-top: 68px;
+
+  border: 1px solid #d5c9c9;
+}
+
+#closeBut {
+  width: 145px;
+  height: 51px;
+  margin-left: 420px;
+  margin-top: 9px;
+  margin-bottom: 9px;
+  padding-top: 9px;
+
+  background: #8c86d7;
+  border-radius: 20px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #ffffff;
+}
+
+#favoritosFrame {
+  position: absolute;
+  width: 1240px;
+  height: auto;
+  left: 100px;
+  top: 104px;
+}
+
+#favoritos {
+  width: 312px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 34px;
+
+  color: #000000;
+}
+
+#barra {
+  width: 1240px;
+  height: 89px;
+  margin-top: 28px;
+
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+
+#butEliminar {
+  position: absolute;
+  width: 200px;
+  height: 51px;
+  left: 100px;
+  top: 74px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  padding-top: 14px;
+  color: #ffffff;
+
+  background: #ece9e9;
+  border-radius: 20px;
+}
+
+#checkboxBarra {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+
+  left: 40px;
+  top: 89px;
+
+  background: #c4c4c4;
+}
+
+#favsBox {
+  position: absolute;
+  width: 1240px;
+  height: 221px;
+  left: 100px;
+  top: 252px;
+}
+
+.cardFavorito {
+  position: relative;
+
+  width: 1240px;
+  height: 221px;
+
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
+}
+
+.check {
+  position: absolute;
+  width: 11.03px;
+  height: 10.08px;
+
+  margin-right: 4.97px;
+  margin-left: 4px;
+  margin-top: 5px;
+  margin-bottom: 4.92px;
+}
+
+.checkFav {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 40px;
+  top: 92px;
+
+  background: #c4c4c4;
+}
+
+.fotoCard {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  left: 100px;
+  top: 20px;
+
+  border-radius: 15px;
+}
+
+.ptag {
+  position: absolute;
+  width: 150px;
+  height: 35px;
+  left: 348px;
+  top: 30px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #000000;
+}
+
+.favName {
+  position: absolute;
+  width: 500px;
+  height: 35px;
+  left: 348px;
+  top: 112px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: #000000;
+}
+
+.butArt {
+  position: absolute;
+  width: 200px;
+  height: 51px;
+  left: 984px;
+  top: 67px;
+  padding-top: 13px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+
+  color: #ffffff;
+
+  background: #c968cb;
+  border-radius: 20px;
+}
+
+.shipping {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 498px;
+  top: 34px;
+}
+
+#warn {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+
+  margin: 0px;
+}

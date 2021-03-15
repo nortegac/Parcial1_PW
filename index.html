@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=Lato:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+    <title>Parcial 1</title>
+  </head>
+  <body>
+    <!-- Barra de navegación -->
+    <nav>
+      <div class="container">
+        <a class="navbar-brand" href="#" onclick="home()">
+          <img src="./img/logo.png" id="logo" />
+        </a>
+      </div>
+      <div class="container" id="barraBusq">
+        <input id="input" type="text" placeholder="Filtrar por categoría" />
+      </div>
+      <div type="button" class="container" id="lupaBox" onclick="filter()">
+        <img src="./img/lupa.png" id="lupa" />
+      </div>
+      <div class="container" type="button" onclick="renderFavs()">
+        <img src="./img/fav.png" id="favs" />
+      </div>
+    </nav>
+
+    <div id="main">
+      <div class="container" id="cellCards"></div>
+
+      <div id="favoritosFrame">
+        <div id="favoritos">Favoritos</div>
+        <div id="barra">
+          <div id="checkboxBarra" onclick="selectAll()">
+            <img class="check" id="checkAll" src="./img/check.png" />
+          </div>
+          <div type="" id="butEliminar" onclick="deleteSelected()">
+            Eliminar
+          </div>
+        </div>
+      </div>
+      <div id="favsBox"></div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div id="modal-content" class="modal-content">
+        <div id="modalText">
+          <div id="modalName2"></div>
+          <div id="modalName">Añadido al carrito de compras</div>
+        </div>
+        <div id="hr"></div>
+        <div type="button" id="closeBut" onclick="closeModal()">Close</div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
