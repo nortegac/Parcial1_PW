@@ -77,10 +77,8 @@ function checkFav(e) {
   let butElim = document.getElementById("butEliminar");
   if (selectedFavs.length == 0) {
     butElim.style.background = "#ECE9E9";
-    butElim.setAttribute("type", "");
   } else {
     butElim.style.background = "#E1677D";
-    butElim.setAttribute("type", "button");
   }
 }
 
@@ -102,8 +100,7 @@ function selectAll() {
 }
 
 function deleteSelected() {
-  let butElim = document.getElementById("butEliminar");
-  if (butElim.getAttribute("type") == "button") {
+  if (selectedFavs.length > 0) {
     document.getElementById("checkAll").hidden = true;
     let newFavs = [];
     for (let i = 0; i < favoritos.length; i++) {
@@ -230,12 +227,10 @@ function renderInfo(e) {
     modal.style.display = "contents";
     modaltext.innerText = cel.title;
   };
-  butRosa.setAttribute("type", "button");
   panel.appendChild(butRosa);
 
   let butMorado = document.createElement("div");
   butMorado.id = "butMorado";
-  butMorado.setAttribute("type", "button");
   butMorado.innerHTML =
     contains(favoritos, cel) == -1
       ? "Añadir a favoritos"
@@ -277,10 +272,8 @@ function renderFavs() {
   let butElim = document.getElementById("butEliminar");
   if (selectedFavs.length == 0) {
     butElim.style.background = "#ECE9E9";
-    butElim.setAttribute("type", "");
   } else {
     butElim.style.background = "#E1677D";
-    butElim.setAttribute("type", "button");
   }
   let favTitle = document.getElementById("favoritosFrame");
   favTitle.hidden = false;
@@ -332,7 +325,6 @@ function renderFavs() {
     let boton = document.createElement("div");
     boton.className = "butArt";
     boton.innerText = "Ver artículo";
-    boton.setAttribute("type", "button");
     boton.onclick = renderInfo;
     card.appendChild(boton);
 

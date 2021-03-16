@@ -19,21 +19,22 @@
     <title>Parcial 1</title>
   </head>
   <body>
+    <script src="script.js"></script>
     <!-- Barra de navegación -->
     <nav>
       <div class="container">
         <a class="navbar-brand" href="#" onclick="home()">
-          <img src="./img/logo.png" id="logo" />
+          <img src="./img/logo.png" id="logo" alt="Inicio" />
         </a>
       </div>
       <div class="container" id="barraBusq">
         <input id="input" type="text" placeholder="Filtrar por categoría" />
       </div>
-      <div type="button" class="container" id="lupaBox" onclick="filter()">
-        <img src="./img/lupa.png" id="lupa" />
+      <div class="container" id="lupaBox" onclick="filter()">
+        <img src="./img/lupa.png" id="lupa" alt="Filtrar" />
       </div>
-      <div class="container" type="button" onclick="renderFavs()">
-        <img src="./img/fav.png" id="favs" />
+      <div class="container" onclick="renderFavs()">
+        <img src="./img/fav.png" id="favs" alt="Favoritos" />
       </div>
     </nav>
 
@@ -44,11 +45,9 @@
         <div id="favoritos">Favoritos</div>
         <div id="barra">
           <div id="checkboxBarra" onclick="selectAll()">
-            <img class="check" id="checkAll" src="./img/check.png" />
+            <img class="check" id="checkAll" src="./img/check.png" alt="" />
           </div>
-          <div type="" id="butEliminar" onclick="deleteSelected()">
-            Eliminar
-          </div>
+          <div id="butEliminar" onclick="deleteSelected()">Eliminar</div>
         </div>
       </div>
       <div id="favsBox"></div>
@@ -63,9 +62,8 @@
           <div id="modalName">Añadido al carrito de compras</div>
         </div>
         <div id="hr"></div>
-        <div type="button" id="closeBut" onclick="closeModal()">Close</div>
+        <div id="closeBut" onclick="closeModal()">Close</div>
       </div>
     </div>
   </body>
-  <script src="script.js"></script>
 </html>
